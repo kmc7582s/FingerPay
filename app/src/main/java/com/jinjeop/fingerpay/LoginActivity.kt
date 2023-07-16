@@ -4,13 +4,9 @@ package com.jinjeop.fingerpay
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.telecom.Call
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
-import com.android.volley.Request
-import com.android.volley.Response
-import com.android.volley.toolbox.StringRequest
-import com.google.android.material.textfield.TextInputEditText
 
 
 class LoginActivity : AppCompatActivity() {
@@ -31,15 +27,4 @@ class LoginActivity : AppCompatActivity() {
 
         }
     }
-
-    private fun loginRequest(id: String, pw: String) {
-        var url:String="https://kmc7582s.cafe24.com/Finger_Pay/android_login.php"
-
-    }
-}
-
-interface  SignService {
-
-    @POST()
-    fun login() : Call<String>
 }
