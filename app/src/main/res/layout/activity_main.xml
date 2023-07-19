@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
 
-
     <ImageView
-        android:layout_width="260dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="60dp"
-        app:srcCompat="@drawable/fp_logo2"/>
+        android:id="@+id/logo_img"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/fp_logo2" />
 
 
 
