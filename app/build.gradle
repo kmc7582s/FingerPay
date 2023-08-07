@@ -1,3 +1,5 @@
+import java.lang.reflect.Method
+
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
@@ -30,6 +32,12 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    viewBinding {
+        enabled true
+    }
+
+
 }
 
 dependencies {
@@ -43,5 +51,20 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
+
     implementation 'com.android.volley:volley:1.2.1'
+
+    //새로고침 기능 SwipeRefreshLayout 의존성
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+    //네이버 지도 sdk 의존성
+    implementation 'com.naver.maps:map-sdk:3.17.0'
+
+    //그래프
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    //play-services-location 의존성 <- 현재위치파악
+    implementation "com.google.android.gms:play-services-location:21.0.1"
+
+
 }
